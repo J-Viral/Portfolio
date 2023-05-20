@@ -1,0 +1,432 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* overflow-x: hidden; is stopping x-axis to scroll*/
+
+/* Main Section*/
+.stage-1{
+    width: 100%;
+    height: 100%;
+    background-image: url("img/welcome2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.stage-1::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 11;
+}
+.cont-1{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#h2-1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 550px;
+}
+#h2-2{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 550px;
+}
+#h2-3{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 550px;
+}
+#para-1{
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 550px;
+    font-size: 50px;
+    z-index: 11;
+
+}
+#btn-1{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 550px;
+    width: 150px;
+    height: 20px;
+    background-color: orange;
+    z-index: 11;
+}
+/*End Of Main Section*/
+
+/* Services Section*/
+#stage-2{
+    height: 130vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 130%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h2-2 span{
+    color: red;
+}
+.bottom{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 60px;
+}
+.top-left{
+    width: 45vw;
+    height:40vh;
+    border-radius: 12px;
+    background-image: url(img/html-img.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content:end;
+    align-items: start;
+    flex-direction: column;
+}
+.top-left::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.web1{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+.web2{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.web0{
+    position:absolute;
+    opacity: 0.6;
+    z-index: 11;
+    margin-bottom: 20px;
+}
+.bottom-left{
+    width: 45vw;
+    height:40vh;
+    border-radius: 12px;
+    background-image: url(img/android.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content:end;
+    align-items: start;
+    flex-direction: column;
+}
+.an1{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    color: white;
+}
+.an2{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    color: white;
+}
+.an0{
+    position:absolute;
+    opacity: 0.6;
+    z-index: 11;
+    margin-bottom: 20px;
+}
+.bottom-left::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.top-right{
+    width: 45vw;
+    height:40vh;
+    background-image: url(img/software-development.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content:end;
+    align-items: start;
+    flex-direction: column;
+}
+
+.top-right::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.soft1{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+.soft2{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.soft0{
+    position:absolute;
+    opacity: 0.6;
+    z-index: 11;
+    margin-bottom: 20px;
+}
+
+.bottom-right{
+    width: 45vw;
+    height: 40vh;
+    background-image: url(img/game.jpg);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content:end;
+    align-items: start;
+    flex-direction: column;
+}
+
+.bottom-right::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.game1{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+.game2{
+    position: absolute;
+    opacity: 0.8;
+    z-index: 11;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.game0{
+    position:absolute;
+    opacity: 0.6;
+    z-index: 11;
+    margin-bottom: 20px;
+}
+/*End O Servies Section*/
+
+/* Recent Projects*/
+.stage-3{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.h3-1{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h3-1 span{
+    color: green;
+}
+
+.project{
+    width: 90vw;
+    height: 85vh;
+    background-image: url(img/game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    border-radius: 13px;
+}
+.project::hover{
+    background:10px solid red;
+}
+.project::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.project-placeholder{
+    width: 100%;
+    height: 30%;
+    background-color: green;
+    position: absolute;
+    z-index: 11;
+    padding-top: 42px;
+    padding-left: 42px;
+}
+
+.h3-2{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.p_para{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 10px;
+}
+/*End Of Recent Projects*/
+
+/* About Me Section*/
+.stage-4{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
+}
+.about-me-h{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-me-para{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.profile{
+    width: 22vw;
+    height: 50vh;
+}
+/*End Of About Me Section*/
+
+/*Conatct Section*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40vw;
+    margin:0 auto;
+}
+.section-title{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section-title span{
+    color: red;
+}
+.contact-items{
+    width: 100%;
+}
+.contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 0px 10px 0 #0000002c;
+    flex-direction: column;
+    transition: .3s ease box-shadow;
+}
+.contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.contact-info h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+/*End of Contact Section*/
+
